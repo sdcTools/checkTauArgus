@@ -1,7 +1,9 @@
 ### Start tau-argus
 
-*
-
+* Click "Help"
+* Click "Options..."
+* Select "Free solver"
+* Type "1" in box between "(modular)" and "min"
 * Click "File"
 * Click "Open Microdata..." 
 * Choose microdata file
