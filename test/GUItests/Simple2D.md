@@ -1,10 +1,11 @@
 ### Start tau-argus
 
-* Click "Help"
+* In menu, click "Help"
 * Click "Options..."
 * Select "Free solver"
 * Type "1" in box between "(modular)" and "min"
-* Click "File"
+* Click"OK"
+* In menu, click "File"
 * Click "Open Microdata..." 
 * Choose microdata file
   * Click "..."-button
@@ -40,5 +41,10 @@
   * In pop-up
     * Select all three options
     * Click "OK"
-  * In po-up 
+  * In pop-up 
     * Click "OK"
+* In menu, click "Output"
+* Click "Save Table..."
+* Select "Code-value"
+* Under "General Options", deselect everything
+
