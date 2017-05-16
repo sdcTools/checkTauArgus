@@ -1,0 +1,67 @@
+---
+title: "Description of Tests for the GUI of tau-Argus"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{GUI-Tests for tau-Argus}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+# Introduction
+
+In this document, several tests for the graphical user interface (GUI) of tau-argus are described.
+
+## simple2d
+
+- Start tau-argus
+- In menu, click *"Help"*
+- Click *"Options..."*
+- Select *"Free solver"*
+- Type *"1"* in box between *"(modular)"* and *"min"*
+- Click *"OK"*
+- In menu, click *"File"*
+- Click *"Open Microdata..."* 
+- Choose microdata file
+    * Click *"..."*-button
+    * Find `tau_testW.asc`
+    * Click *"OK"*
+- Click *"Specify"*
+- Click *"Tables..."*
+- In panel *"Explanatory Variables"*
+    * Select *"Size"*
+    * Click *">>"*-button
+    * Select *"Region"* in *"Explanatory Variables"*
+    * Click *">>"*-button
+- In panel *"Cell items"*
+    * Select *"Var2"*
+    * Click *">>"*-button next to *"Response variable"*
+    * Select *"Variable"* under *"Cost variable"*
+    * Type *"1.0"* in box next to *"Lambda"*
+- In panel *"Parameters"*
+    * Select *"P%-rule"*
+    * Select *"P%-rule"*-tab
+    * Type *"15"* in box *"Ind-1 P"*
+    * Type *"1"* in box *"Ind-1 N"*
+- Unselect
+    * *"Minimum frequency"*
+    * *"Zero unsafe"*
+    * *"Apply weights"*
+    * Set Missing=safe
+- Click *"v"*-button next to Parameters-panel
+- Click *"Compute Tables"* at bottom of the window
+- In panel *"Suppress"*
+    * Choose *"Modular"*
+    * Click *"Suppress"*
+    * In pop-up
+        * Select all three options
+        * Click *"OK"*
+    * In pop-up 
+        * Click *"OK"*
+- In menu, click *"Output"*
+- Click *"Save Table..."*
+- Select *"Code-value"*
+- Under *"General Options"*, deselect everything
+
+## Scenario 2
+* Start tau-argus
+* ...
