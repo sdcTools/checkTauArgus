@@ -47,4 +47,11 @@
 * Click "Save Table..."
 * Select "Code-value"
 * Under "General Options", deselect everything
+* In box above "Write table"-button type "Simple2D.txt"
+* Click "Write table"
+* In pop-up
+ * Click "Yes"
+* In next pop-up
+ * Click "No"
+### Close tau-argus 
 
