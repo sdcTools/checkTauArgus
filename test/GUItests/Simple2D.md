@@ -8,8 +8,10 @@
 * In menu, click "File"
 * Click "Open Microdata..." 
 * In pop-up
-  * Click "..."-button
-  * Find `tau_testW.asc`
+  * Click top-most "..."-button
+  * In next pop-up
+    * Find `tau_testW.asc`
+    * Click "Open"
   * Click "OK"
 * Click "Specify"
 * Click "Tables..."
@@ -26,8 +28,8 @@
 * In panel "Parameters"
   * Select "P%-rule"
   * Select "P%-rule"-tab
-  * Type "15" in box "Ind-1 P"
-  * Type "1" in box "Ind-1 N"
+  * Type "15" in first box on row "Ind-1" (under "P")
+  * Type "1" in second box on row "Ind-1" (under "N")
 * Unselect
   * "Minimum frequency"
   * "Zero unsafe"
@@ -50,8 +52,8 @@
 * In box above "Write table"-button type "Simple2D.txt"
 * Click "Write table"
 * In pop-up
- * Click "Yes"
+  * Click "Yes"
 * In next pop-up
- * Click "No"
+  * Click "No"
 ### Close tau-argus 
 
