@@ -34,7 +34,7 @@
   * "Minimum frequency"
   * "Zero unsafe"
   * "Apply weights"
-  * Missing=safe
+  * "Missing=safe"
 * Click "v"-button next to Parameters-panel
 * Click "Compute Tables" at bottom of the window
 * In panel "Suppress" 
