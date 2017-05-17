@@ -48,7 +48,10 @@
 * In menu, click "Output"
 * Click "Save Table..."
 * Select "Code-value"
-* Under "General Options", deselect everything
+* Under "General Options"
+  * Select "Add status"
+  * Select "Embed spanning variables in quotes"
+  * Deselect other options
 * In box above "Write table"-button type "Simple2D.txt"
 * Click "Write table"
 * In pop-up
