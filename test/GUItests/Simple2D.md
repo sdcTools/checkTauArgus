@@ -3,7 +3,7 @@
 * In menu, click "Help"
 * Click "Options..."
 * Select "Free solver"
-* Type "1" in box between "(modular)" and "min"
+* Type `1` in box between "(modular)" and "min"
 * Click"OK"
 * In menu, click "File"
 * Click "Open Microdata..." 
@@ -24,12 +24,12 @@
   * Select "Var2"
   * Click ">>"-button next to "Response variable"
   * Select "Variable" under "Cost variable"
-  * Type "1.0" in box next to "Lambda"
+  * Type `1.0` in box next to "Lambda"
 * In panel "Parameters"
   * Select "P%-rule"
   * Select "P%-rule"-tab
-  * Type "15" in first box on row "Ind-1" (under "P")
-  * Type "1" in second box on row "Ind-1" (under "N")
+  * Type `15` in first box on row "Ind-1" (under "P")
+  * Type `1` in second box on row "Ind-1" (under "N")
 * Unselect
   * "Minimum frequency"
   * "Zero unsafe"
@@ -52,7 +52,7 @@
   * Select "Add status"
   * Select "Embed spanning variables in quotes"
   * Deselect other options
-* In box above "Write table"-button type "Simple2D.txt"
+* In box above "Write table"-button type `Simple2D.txt`
 * Click "Write table"
 * In pop-up
   * Click "Yes"
