@@ -18,7 +18,7 @@
 * In panel "Explanatory Variables"
   * Select "Size"
   * Click ">>"-button
-  * Select "Region" in " Explanatory Variables"
+  * Select "Region" in "Explanatory Variables"
   * Click ">>"-button
 * In panel "Cell items"
   * Select "Var2"
