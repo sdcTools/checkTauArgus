@@ -7,7 +7,7 @@
 * Click"OK"
 * In menu, click "File"
 * Click "Open Microdata..." 
-* Choose microdata file
+* In pop-up
   * Click "..."-button
   * Find `tau_testW.asc`
   * Click "OK"
