@@ -51,7 +51,7 @@
 * Under "General Options"
   * Select "Add status"
   * Select "Embed spanning variables in quotes"
-  * Deselect other options
+  * Unselect other options
 * In box above "Write table"-button type `Simple2D.txt`
 * Click "Write table"
 * In pop-up
