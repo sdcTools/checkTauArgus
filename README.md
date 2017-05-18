@@ -6,7 +6,7 @@ This package contains test-scenarios for tauArgus which will be run directly usi
 This package is not on CRAN and needs to be installed manually. The easiest way to do so is to run the following command from R:
 
 ```
-devtools::install_github("sdcTools/checkTauArgus")
+devtools::install_github("sdcTools/checkTauArgus", build_vignettes=TRUE)
 ```
 
 ## Testing tau-Argus
