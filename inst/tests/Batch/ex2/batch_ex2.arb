@@ -1,0 +1,9 @@
+<LOGBOOK> "arguslog_ex2.log"
+<OPENMICRODATA> "microdata_ex2.asc"
+<OPENMETADATA> "metadata_ex2.rda"
+<SPECIFYTABLE> "region""gender"|"num1"|""|""
+<SAFETYRULE> FREQ(5,20)|P(20,5)|
+<READMICRODATA>
+<SOLVER> FREE
+<SUPPRESS> OPT(1,1)
+<WRITETABLE> (1, 3, AS+FL+, "tabout_ex2.txt")
