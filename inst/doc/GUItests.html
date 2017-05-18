@@ -41,75 +41,107 @@
     <section id="main-content">
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
-<p>In this document, several tests for the graphical user interface (GUI) of tau-argus are described.</p>
+<p>In this document, several tests for the graphical user interface (GUI) of tau-argus are described. Each test consists of a description of steps that should be done sequentially as well as zip-files containing the required inputs as well as the expected outputs. These zip-files must be copied to folder <code>inst/doc</code>.</p>
 <div id="simple2d" class="section level2">
-<h2>simple2d</h2>
+<h2>Simple2D</h2>
+<div id="inputdata" class="section level3">
+<h3>Inputdata:</h3>
+<p><a href="Simple2D_InputData.zip"><strong>Click here</strong></a> to download the required input data.</p>
+</div>
+<div id="steps-to-do" class="section level3">
+<h3>Steps to do:</h3>
 <ul>
-<li>Start tau-argus</li>
-<li>In menu, click <em>“Help”</em></li>
-<li>Click <em>“Options…”</em></li>
-<li>Select <em>“Free solver”</em></li>
-<li>Type <em>“1”</em> in box between <em>“(modular)”</em> and <em>“min”</em></li>
-<li>Click <em>“OK”</em></li>
-<li>In menu, click <em>“File”</em></li>
-<li>Click <em>“Open Microdata…”</em></li>
-<li>Choose microdata file
+<li>In menu, click “Help”</li>
+<li>Click “Options…”</li>
+<li>Select “Free solver”</li>
+<li>Type <code>1</code> in box between “(modular)” and “min”</li>
+<li>Click“OK”</li>
+<li>In menu, click “File”</li>
+<li>Click “Open Microdata…”</li>
+<li>In pop-up
 <ul>
-<li>Click <em>“…”</em>-button</li>
+<li>Click top-most “…”-button
+<ul>
+<li>In next pop-up
+<ul>
 <li>Find <code>tau_testW.asc</code></li>
-<li>Click <em>“OK”</em></li>
+<li>Click “Open”</li>
 </ul></li>
-<li>Click <em>“Specify”</em></li>
-<li>Click <em>“Tables…”</em></li>
-<li>In panel <em>“Explanatory Variables”</em>
-<ul>
-<li>Select <em>“Size”</em></li>
-<li>Click <em>“&gt;&gt;”</em>-button</li>
-<li>Select <em>“Region”</em> in <em>“Explanatory Variables”</em></li>
-<li>Click <em>“&gt;&gt;”</em>-button</li>
+<li>Click “OK”</li>
 </ul></li>
-<li>In panel <em>“Cell items”</em>
-<ul>
-<li>Select <em>“Var2”</em></li>
-<li>Click <em>“&gt;&gt;”</em>-button next to <em>“Response variable”</em></li>
-<li>Select <em>“Variable”</em> under <em>“Cost variable”</em></li>
-<li>Type <em>“1.0”</em> in box next to <em>“Lambda”</em></li>
 </ul></li>
-<li>In panel <em>“Parameters”</em>
+<li>Click “Specify”</li>
+<li>Click “Tables…”</li>
+<li>In panel “Explanatory Variables”
 <ul>
-<li>Select <em>“P%-rule”</em></li>
-<li>Select <em>“P%-rule”</em>-tab</li>
-<li>Type <em>“15”</em> in box <em>“Ind-1 P”</em></li>
-<li>Type <em>“1”</em> in box <em>“Ind-1 N”</em></li>
+<li>Select “Size”</li>
+<li>Click “&gt;&gt;”-button</li>
+<li>Select “Region” in “Explanatory Variables”</li>
+<li>Click “&gt;&gt;”-button</li>
+</ul></li>
+<li>In panel “Cell items”
+<ul>
+<li>Select “Var2”</li>
+<li>Click “&gt;&gt;”-button next to “Response variable”</li>
+<li>Select “Variable” under “Cost variable”</li>
+<li>Type <code>1.0</code> in box next to “Lambda”</li>
+</ul></li>
+<li>In panel “Parameters”
+<ul>
+<li>Select “P%-rule”</li>
+<li>Select “P%-rule”-tab</li>
+<li>Type <code>15</code> in first box on row “Ind-1” (under “P”)</li>
+<li>Type <code>1</code> in second box on row “Ind-1” (under “N”)</li>
 </ul></li>
 <li>Unselect
 <ul>
-<li><em>“Minimum frequency”</em></li>
-<li><em>“Zero unsafe”</em></li>
-<li><em>“Apply weights”</em></li>
-<li>Set Missing=safe</li>
+<li>“Minimum frequency”</li>
+<li>“Zero unsafe”</li>
+<li>“Apply weights”</li>
+<li>“Missing=safe”</li>
 </ul></li>
-<li>Click <em>“v”</em>-button next to Parameters-panel</li>
-<li>Click <em>“Compute Tables”</em> at bottom of the window</li>
-<li>In panel <em>“Suppress”</em>
+<li>Click “v”-button next to Parameters-panel</li>
+<li>Click “Compute Tables” at bottom of the window</li>
+<li>In panel “Suppress”
 <ul>
-<li>Choose <em>“Modular”</em></li>
-<li>Click <em>“Suppress”</em></li>
+<li>Choose “Modular”</li>
+<li>Click “Suppress”</li>
 <li>In pop-up
 <ul>
 <li>Select all three options</li>
-<li>Click <em>“OK”</em></li>
+<li>Click “OK”</li>
 </ul></li>
 <li>In pop-up
 <ul>
-<li>Click <em>“OK”</em></li>
+<li>Click “OK”</li>
 </ul></li>
 </ul></li>
-<li>In menu, click <em>“Output”</em></li>
-<li>Click <em>“Save Table…”</em></li>
-<li>Select <em>“Code-value”</em></li>
-<li>Under <em>“General Options”</em>, deselect everything</li>
+<li>In menu, click “Output”</li>
+<li>Click “Save Table…”</li>
+<li>Select “Code-value”</li>
+<li>Under “General Options”
+<ul>
+<li>Select “Add status”</li>
+<li>Select “Embed spanning variables in quotes”</li>
+<li>Unselect other options</li>
+</ul></li>
+<li>In box above “Write table”-button type <code>Simple2D.txt</code></li>
+<li>Click “Write table”</li>
+<li>In pop-up
+<ul>
+<li>Click “Yes”</li>
+</ul></li>
+<li>In next pop-up
+<ul>
+<li>Click “No”</li>
+</ul></li>
+<li>Close tau-argus</li>
 </ul>
+</div>
+<div id="expected-output" class="section level3">
+<h3>Expected Output:</h3>
+<p>The expected output can be <a href="Simple2D_Expected_Output.zip"><strong>downloaded here</strong></a>.</p>
+</div>
 </div>
 <div id="scenario-2" class="section level2">
 <h2>Scenario 2</h2>
