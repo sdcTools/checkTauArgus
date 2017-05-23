@@ -23,10 +23,13 @@ Several test-instances have been set up which allow to test the functionality of
 
 ## Adding Tests
 ### Pre-defined tests
-To add tests that can be run using `checkArgus()`, please file a pull-request against the master-branch of this repository. A new set of tests can be made by creating a new folder under the `inst/tests` directory. The examples in the `Batch` and `CreateBatch` directories may used as starting points. Using the `testthat`-package, a lot of `expect_xx()`-functions may be used to formulate expectations on the output. To get more information about the functionality of this package, please have a look at the package documentation (`help(pa=testthat`).
+To add tests that can be run using `checkArgus()`, please file a pull-request against the master-branch of this repository. To file a pull request, you need to first [fork this repository](https://help.github.com/articles/fork-a-repo/) and then read [here](https://help.github.com/articles/creating-a-pull-request/) on how to create the actual request. This procedure is also described in detail [in this document](https://gist.github.com/Chaser324/ce0505fbed06b947d962). The maintainers of this package will then update the repository by merging the pull-request. 
+
+A new set of tests can be made by creating a new folder under the `inst/tests` directory. The examples in the `Batch` and `CreateBatch` directories may used as starting points. Using the `testthat`-package, a lot of `expect_xx()`-functions may be used to formulate expectations on the output. To get more information about the functionality of this package, please have a look at the package documentation (`help(pa=testthat`).
 
 ### Adding GUI-Tests
-To add instructions for additional tests for the graphical user interface, please file a pull-request against the master branch of this repository by updating the package vignette located `vignettes/GUItests.Rmd`.
+To add instructions for additional tests for the graphical user interface, please file a pull-request (as described above) against the master branch of this repository by updating the package vignette located `vignettes/GUItests.Rmd`.
 
 ## Issues
 Please notify us about bugs and issues by creating an issue at https://github.com/sdcTools/UserSupport/issues.
+
