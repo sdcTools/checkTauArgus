@@ -1,24 +1,1 @@
-<SEPARATOR> ","
-<SAFE> "S"
-<UNSAFE> "U"
-<PROTECT> "Z"
-region "99999"
-   <RECODEABLE>
-   <TOTCODE> "Total"
-   <HIERCODELIST> "hier_region_ex1.hrc"
-   <HIERLEADSTRING> "@"
-   <HIERARCHICAL>
-gender "999999"
-   <RECODEABLE>
-   <TOTCODE> "Total"
-   <HIERCODELIST> "hier_gender_ex1.hrc"
-   <HIERLEADSTRING> "@"
-   <HIERARCHICAL>
-freq "9999"
-   <FREQUENCY>
-sdcStatus
-   <STATUS>
-lpl
-   <NUMERIC> <LOWERPL>
-upl
-   <NUMERIC> <UPPERPL>
+<SEPARATOR> ","<SAFE> "S"<UNSAFE> "U"<PROTECT> "Z"region "99999"   <RECODEABLE>   <TOTCODE> "Total"   <HIERCODELIST> "hier_region_ex1.hrc"   <HIERLEADSTRING> "@"   <HIERARCHICAL>gender "999999"   <RECODEABLE>   <TOTCODE> "Total"   <HIERCODELIST> "hier_gender_ex1.hrc"   <HIERLEADSTRING> "@"   <HIERARCHICAL>freq "9999"   <FREQUENCY>sdcStatus   <STATUS>lpl   <NUMERIC> <LOWERPL>upl   <NUMERIC> <UPPERPL>
