@@ -17,8 +17,10 @@ dim.gender <- data.frame(
 
 dimList <- list(region=dim.region, gender=dim.gender)
 dimVarInd <- c(1,2)
-numVarInd <- 3:5
+freqVarInd <- 3
+numVarInd <- 4:5
 sampWeightInd <- 6
+weightInd <- NULL
 
 ## creating an object of class \code{\link{sdcProblem-class}}
 obj <- makeProblem(
