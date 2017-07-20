@@ -1,7 +1,7 @@
 <LOGBOOK> "arguslog_ex1.log"
 <OPENTABLEDATA> "tabdata_ex1.tab"
 <OPENMETADATA> "metadata_ex1.rda"
-<SPECIFYTABLE> "region""gender"|"<freq>"|""|""
+<SPECIFYTABLE> "region""gender"|"freq"|""|""
 <SAFETYRULE> MAN(20)
 <READTABLE>
 <SOLVER> FREE

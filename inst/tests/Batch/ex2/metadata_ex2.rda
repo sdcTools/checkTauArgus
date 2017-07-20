@@ -1,22 +1,22 @@
-<SEPARATOR> ","
-region 1 9
-   <RECODEABLE>
-   <HIERCODELIST> hier_region_ex2.hrc
-   <HIERLEADSTRING> @
-   <HIERARCHICAL>
-gender 6 999999
-   <RECODEABLE>
-   <HIERCODELIST> hier_gender_ex2.hrc
-   <HIERLEADSTRING> @
-   <HIERARCHICAL>
-weight 3 999
-   <NUMERIC>
-   <WEIGHT>
-val 3 999
-   <NUMERIC>
-num1 6 999999
-   <NUMERIC>
-   <DECIMALS> 2
-num2 6 999999
-   <NUMERIC>
+<SEPARATOR> ","
+region 1
+   <RECODEABLE>
+   <HIERCODELIST> hier_region_ex2.hrc
+   <HIERLEADSTRING> @
+   <HIERARCHICAL>
+gender 6
+   <RECODEABLE>
+   <HIERCODELIST> hier_gender_ex2.hrc
+   <HIERLEADSTRING> @
+   <HIERARCHICAL>
+weight 3 999
+   <NUMERIC>
+   <WEIGHT>
+val 3 999
+   <NUMERIC>
+num1 6 999999
+   <NUMERIC>
+   <DECIMALS> 2
+num2 6 999999
+   <NUMERIC>
    <DECIMALS> 2

@@ -58,8 +58,5 @@ test_that("Checking structure of microdata problem", {
 })
 
 test_that("Checking suppression pattern of microdata problem", {
-  expect_equal(sum(res$sdcStatus_argus==c("s")), 11)
-  expect_equal(sum(res$sdcStatus_argus==c("z")), 0)
-  expect_equal(sum(res$sdcStatus_argus==c("u")), 1)
-  expect_equal(sum(res$sdcStatus_argus==c("x")), 3)
+  expect_equal(res$sdcStatus_argus, c("s","s","s","s","x","u","s","s","s","s","x","x","s","s","s"))
 })

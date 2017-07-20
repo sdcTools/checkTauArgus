@@ -39,12 +39,10 @@ checkArgus <- function(tau_exe, what="everything", verbose=FALSE) {
   nrTests <- length(runTests)
   for (i in 1:nrTests) {
     cat("running Test-Module", sQuote(what[i]),"\n")
+    res <- test_dir(runTests[i], reporter="summary", env=checkenv)
     if (verbose) {
-      print(test_dir(runTests[i], reporter="tap", env=checkenv))
-    } else {
-      test_dir(runTests[i], reporter="tap", env=checkenv)
+      print(res)
     }
-    cat("\n#######################\n")
   }
-  invisible(TRUE)
+  invisible(res)
 }
