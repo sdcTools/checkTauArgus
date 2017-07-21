@@ -1,6 +1,6 @@
 # checkTauArgus
 
-This package contains test-scenarios for tauArgus which will be run directly using batch-files. Also the generation of valid batch-files using **R**-package **sdcTable** (>= 0.22.6) can be tested.
+This package contains test-scenarios for tauArgus which will be run directly using batch-files. Also the generation of valid batch-files using **R**-package **sdcTable** (>= 0.22.7) can be tested.
 
 ## Installation
 This package is not on CRAN and needs to be installed manually. The easiest way to do so is to run the following command from R:
