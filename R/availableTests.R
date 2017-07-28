@@ -11,5 +11,5 @@
 #' checkArgus(tau_exe="c:/tau/tau.exe", what=avail[1])
 #' }
 availableTests <- function() {
-  list.dirs(paste0(system.file(package="checkArgus"),"/tests"), full.names=FALSE)[-1]
+  list.dirs(paste0(system.file(package="checkArgus"),"/tests"), full.names=FALSE, recursive=FALSE)[-1]
 }
