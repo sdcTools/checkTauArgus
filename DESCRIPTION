@@ -1,8 +1,8 @@
 Package: checkArgus
 Type: Package
 Title: Allows to run automated tests using Batchfiles on tau-Argus (if installed)
-Version: 0.2.1
-Date: 2017-07-28
+Version: 0.2.2
+Date: 2017-08-18
 Author: Bernhard Meindl <bernhard.meindl@statistik.gv.at>
 Maintainer: Bernhard Meindl <bernhard.meindl@statistik.gv.at>
 Description: This package allows to run pre-defined tests using batch-files on tau-argus and checks, if batch-files created from sdcTable were correct.
