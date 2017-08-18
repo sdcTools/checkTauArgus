@@ -25,7 +25,7 @@ In this document, several tests for the graphical user interface (GUI) of tau-ar
 - Click "Options..."
 - Select "Free solver"
 - Type `1` in box between "(modular)" and "min"
-- Click"OK"
+- Click "OK"
 - In menu, click "File"
 - Click "Open Microdata..." 
 - In pop-up
@@ -84,6 +84,363 @@ In this document, several tests for the graphical user interface (GUI) of tau-ar
 ### Expected Output:
 The expected output can be [**downloaded here**](Simple2D_Expected_Output.zip).
 
+
 ## Scenario 2
-* Start tau-argus
-* ...
+### Inputdata:
+
+[**Click here**](TEST.zip) to download the required input data.
+
+### Steps to do:
+
+- Start Tau Argus
+- In menu, click "Help"
+- Click "Options..."
+- Select "Free solver"
+- Type `1` in box between "(modular)" and "min"
+- Click "OK"
+- In menu, click "File"
+- Click "Open Microdata..." 
+- In pop-up
+    * Click top-most "..."-button
+        * In next pop-up
+            * Find `example_enterprise.asc`
+            * Click "Open"
+        * Click "OK"
+- In menu, click "Specify"
+- Click "Tables..."
+- In panel "Explanatory Variables"
+    * Select "act"
+    * Click ">>"-button
+    * Select "product" in "Explanatory Variables"
+    * Click ">>"-button
+- In panel "Cell items"
+    * Select "turnover"
+    * Click ">>"-button next to "Response variable"
+    * Select "Variable" under "Cost variable"
+    * Type `1.0` in box next to "Lambda"
+- In panel "Parameters"
+    * Select "P%-rule"
+    * Select "P%-rule"-tab
+    * Type `0` in first box on row "Ind-1" (under "P")
+    * Type `0` in second box on row "Ind-1" (under "N")
+    * Type `0` in first box on row "Ind-2" (under "P")
+    * Type `0` in second box on row "Ind-2" (under "N")
+    * Type `10` in first box on row "Hold-1" (under "P")
+    * Type `1` in second box on row "Hold-1" (under "N")
+    * Type `0` in first box on row "Hold-2" (under "P")
+    * Type `0` in second box on row "Hold-2" (under "N")
+- Unselect
+    * "Minimum frequency"
+    * "Apply weights"
+- Select
+    * "Missing=safe"
+    * "Use holdings info"
+    * "Zero unsafe"
+- Type `10.0` in box next to "Range"
+- Type `10` in box Manual safety range
+- Click "v"-button next to Parameters-panel
+- Click "Compute Tables" at bottom of the window
+- In panel "Suppress" 
+    * Choose "Hypercube"
+    * Click "Suppress"
+    * In pop-up
+        * Select all two options
+        * Type 100 in box near %
+        * Select Normal size in panel Memory model
+        * Click "OK"
+    * In pop-up 
+        * Click "OK"
+- In menu, click "Output"
+- Click "Save Table..."
+- Select "Code-value"
+- Under "General Options"
+    * Select "Add status"
+    * Select "Embed spanning variables in quotes"
+    * Unselect other options
+- In box above "Write table"-button type `test_1.txt`
+- Click "Write table"
+- In pop-up
+    * Click "Yes"
+- In next pop-up
+    * Click "Close"
+- Close tau-argus
+
+### Expected Output:
+The expected output can be  [**downloaded here**](OUTPUT.zip).
+
+
+## Scenario 3
+### Inputdata:
+
+[**Click here**](TEST.zip) to download the required input data.
+
+### Steps to do:
+
+- Start Tau Argus
+- In menu, click "Help"
+- Click "Options..."
+- Select "Free solver"
+- Type `1` in box between "(modular)" and "min"
+- Click "OK"
+- In menu, click "File"
+- Click "Open Microdata..." 
+- In pop-up
+    * Click top-most "..."-button
+        * In next pop-up
+            * Find `example_enterprise.asc`
+            * Click "Open"
+        * Click "OK"
+- In menu, click "Specify"
+- Click "Tables..."
+- In panel "Explanatory Variables"
+    * Select "act"
+    * Click ">>"-button
+    * Select "product" in "Explanatory Variables"
+    * Click ">>"-button
+- In panel "Cell items"
+    * Select "turnover"
+    * Click ">>"-button next to "Response variable"
+    * Select "Variable" under "Cost variable"
+    * Type `1.0` in box next to "Lambda"
+- In panel "Parameters"
+    * Select "P%-rule"
+    * Select "P%-rule"-tab
+    * Type `0` in first box on row "Ind-1" (under "P")
+    * Type `0` in second box on row "Ind-1" (under "N")
+    * Type `0` in first box on row "Ind-2" (under "P")
+    * Type `0` in second box on row "Ind-2" (under "N")
+    * Type `10` in first box on row "Hold-1" (under "P")
+    * Type `1` in second box on row "Hold-1" (under "N")
+    * Type `0` in first box on row "Hold-2" (under "P")
+    * Type `0` in second box on row "Hold-2" (under "N")
+- Unselect
+    * "Minimum frequency"
+    * "Apply weights"
+- Select
+    * "Missing=safe"
+    * "Use holdings info"
+    * "Zero unsafe"
+- Type `10.0` in box next to "Range"
+- Type `10` in box Manual safety range
+- Click "v"-button next to Parameters-panel
+- In panel "Explanatory Variables"
+    * Select "product" in second box
+    * Click "<<"-button
+    * Select "region" in first box
+    * Click ">>"-button
+- Click "v"-button next to Parameters-panel
+- Click "Compute Tables" at bottom of the window
+- In menu, click "Modify"
+- Click "Linked Tables..."
+- Click "Suppress via modular"
+    * In pop-up
+        * Select all three options
+        * Click "OK"
+    * In pop-up
+        * Click "OK"
+    * Click "Ready"
+- In menu, click "Output"
+- Click "Save Table..."
+- Select "Code-value"
+- Under "General Options"
+    * Select "Add status"
+    * Select "Embed spanning variables in quotes"
+    * Unselect other options
+- In box above "Write table"-button type `test_2a.txt`
+- Click "Write table"
+- In pop-up
+    * Click "Yes"
+- In next pop-up
+    * Click "Close"
+- In menu, click "Modify"
+- Click "Select table"
+    * In pop-up
+        * Select second table
+        * Click "OK"
+- In menu, click "Output"
+- Click "Save Table..."
+- Select "Code-value"
+- Under "General Options"
+    * Select "Add status"
+    * Select "Embed spanning variables in quotes"
+    * Unselect other options
+- In box above "Write table"-button type `test_2b.txt`
+- Click "Write table"
+- In pop-up
+    * Click "Yes"
+- In next pop-up
+    * Click "Close"        
+- Close tau-argus
+
+### Expected Output:
+The expected output can be  [**downloaded here**](OUTPUT.zip).
+
+
+## Scenario 4
+### Inputdata:
+
+[**Click here**](TEST.zip) to download the required input data.
+
+### Steps to do:
+
+- Start Tau Argus
+- In menu, click "Help"
+- Click "Options..."
+- Select "Free solver"
+- Type `1` in box between "(modular)" and "min"
+- Click "OK"
+- In menu, click "File"
+- Click "Open Microdata..." 
+- In pop-up
+    * Click top-most "..."-button
+        * In next pop-up
+            * Find `example_enterprise.asc`
+            * Click "Open"
+        * Click "OK"
+- In menu, click "Specify"
+- Click "Tables..."
+- In panel "Explanatory Variables"
+    * Select "region"
+    * Click ">>"-button
+    * Select "mun" in "Explanatory Variables"
+    * Click ">>"-button
+- In panel "Cell items"
+    * Select "turnover"
+    * Click ">>"-button next to "Response variable"
+    * Select "Variable" under "Cost variable"
+    * Type `1.0` in box next to "Lambda"
+In panel "Parameters"
+    * Select "P%-rule"
+    * Select "P%-rule"-tab
+    * Type `0` in first box on row "Ind-1" (under "P")
+    * Type `0` in second box on row "Ind-1" (under "N")
+    * Type `0` in first box on row "Ind-2" (under "P")
+    * Type `0` in second box on row "Ind-2" (under "N")
+    * Type `10` in first box on row "Hold-1" (under "P")
+    * Type `1` in second box on row "Hold-1" (under "N")
+    * Type `0` in first box on row "Hold-2" (under "P")
+    * Type `0` in second box on row "Hold-2" (under "N")
+- Unselect
+    * "Minimum frequency"
+    * "Apply weights"
+- Select
+    * "Missing=safe"
+    * "Use holdings info"
+    * "Zero unsafe"
+- Type `10.0` in box next to "Range"
+- Type `10` in box Manual safety range
+- Click "v"-button next to Parameters-panel
+- Click "Compute Tables" at bottom of the window
+- In panel "Suppress" 
+    * Choose "Modular"
+    * Click "Suppress"
+    * In pop-up
+        * Select all three options
+        * Click "OK"
+    * In pop-up 
+        * Click "OK"
+- In menu, click "Output"
+- Click "Save Table..."
+- Select "Code-value"
+- Under "General Options"
+    * Select "Add status"
+    * Select "Embed spanning variables in quotes"
+    * Unselect other options
+- In box above "Write table"-button type `test_3a.txt`
+- Click "Write table"
+- In pop-up
+    * Click "Yes"
+- In next pop-up
+    * Click "Close"
+- In menu, click "Output"
+- Click "Generate Apriory..."
+    * In pop-up
+        * In box above "Safe file name:"-button type `test_3a.txt`
+        * In box above "A priori file name:"-button type `test_3a.hst`
+        * Set "Output dimension" on 2
+        * Set "ExpVar1" on row 1
+        * Set "Other" on row 2
+        * In panel "Mapping" set:
+            * Safe to Protect
+            * Safe (manual) to Protect
+            * All Unsafe to Unsafe
+            * Protected to Protect
+            * Secondary to Unsafe
+            * Secondary (from manual) to Unsafe
+            * Empty (non-struct.) to Omit
+            * Empty to Omit
+        * Click "OK"
+- In menu, click "File"
+- Click "Open Microdata..." 
+- In pop-up
+    * Click top-most "..."-button
+        * In next pop-up
+            * Find `example_enterprise.asc`
+            * Click "Open"
+        * Click "OK"
+- In menu, click "Specify"
+- Click "Tables..."
+- In panel "Explanatory Variables"
+    * Select "region"
+    * Click ">>"-button
+    * Select "product" in "Explanatory Variables"
+    * Click ">>"-button
+- In panel "Cell items"
+    * Select "turnover"
+    * Click ">>"-button next to "Response variable"
+    * Select "Variable" under "Cost variable"
+    * Type `1.0` in box next to "Lambda"
+In panel "Parameters"
+    * Select "P%-rule"
+    * Select "P%-rule"-tab
+    * Type `0` in first box on row "Ind-1" (under "P")
+    * Type `0` in second box on row "Ind-1" (under "N")
+    * Type `0` in first box on row "Ind-2" (under "P")
+    * Type `0` in second box on row "Ind-2" (under "N")
+    * Type `10` in first box on row "Hold-1" (under "P")
+    * Type `1` in second box on row "Hold-1" (under "N")
+    * Type `0` in first box on row "Hold-2" (under "P")
+    * Type `0` in second box on row "Hold-2" (under "N")
+- Unselect
+    * "Minimum frequency"
+    * "Apply weights"
+- Select
+    * "Missing=safe"
+    * "Use holdings info"
+    * "Zero unsafe"
+- Type `10.0` in box next to "Range"
+- Type `10` in box Manual safety range
+- Click "v"-button next to Parameters-panel
+- Click "Compute Tables" at bottom of the window
+- Click "A priory info" button
+    * In pop-up
+        * In first box ("APriori filename") find `test_3a.hst`
+        * Select "Ignore incorrect lines"
+        * Select "Expand for trivial levels"
+        * Click "Apply"-button
+        * Click "Close"-button
+- In panel "Suppress" 
+    * Choose "Modular"
+    * Click "Suppress"
+    * In pop-up
+        * Select all three options
+        * Click "OK"
+    * In pop-up 
+        * Click "OK"
+- In menu, click "Output"
+- Click "Save Table..."
+- Select "Code-value"
+- Under "General Options"
+    * Select "Add status"
+    * Select "Embed spanning variables in quotes"
+    * Unselect other options
+- In box above "Write table"-button type `test_3b.txt`
+- Click "Write table"
+- In pop-up
+    * Click "Yes"
+- In next pop-up
+    * Click "Close"
+- Close tau-argus
+
+### Expected Output:
+The expected output can be  [**downloaded here**](OUTPUT.zip).
