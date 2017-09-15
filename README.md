@@ -9,6 +9,9 @@ This package is not on CRAN and needs to be installed manually. The easiest way 
 devtools::install_github("sdcTools/checkTauArgus", build_vignettes=TRUE)
 ```
 
+## Note
+You can have a look at the source code of this package directly here on [github](https://github.com/sdcTools/checkTauArgus), however it should be mentioned that you only get *'correct'* results once you create an R-package from this code. This is especially the case for hyperlinks in `vignettes/*.Rmd` files. These links only get resolved correctly once these markdown-files are compiled into html-output as it is done when the package is build. 
+
 ## Testing tau-Argus
 
 ### Run pre-defined tests
